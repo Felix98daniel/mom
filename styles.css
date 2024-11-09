@@ -82,7 +82,7 @@
   .catalog {
     display: grid;
   grid-template-columns: repeat(2, 1fr); /* Fuerza siempre 2 columnas en pantallas grandes */
-  gap: 20px; /* Espacio entre las columnas */
+  gap: 5px; /* Espacio entre las columnas */
   padding: 20px;
   text-align: center;
   justify-items: center;
