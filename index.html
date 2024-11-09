@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Catálogo Omnilife</title>
+  <link rel="icon" href="101.png" type="image/png">
   <link rel="stylesheet" href="styles.css">
   <script defer src="script.js"></script>
 </head>
@@ -11,27 +12,114 @@
   <!-- Menú de navegación -->
   <nav class="navbar">
     <ul>
-      <li><a href="#home">Inicio</a></li>
-      <li><a href="#catalog">Catálogo</a></li>
-      <li><a href="#contact">Contacto</a></li>
+      <li><a href="#inicio">Inicio</a></li>
+      <li><a href="#productos">Productos</a></li>
+      <li><a href="#testimonios">Testimonios</a></li>
+      <li><a href="#pagina">Página</a></li>
     </ul>
   </nav>
 
-  <!-- Encabezado -->
-  <header class="header" id="home">
-    <img src="logo.png" alt="Logo Omnilife" class="logo">
+  <!-- Sección de Inicio -->
+  <header class="header" id="inicio">
+    <img src="101.png" alt="Logo Omnilife" class="logo">
     <h1>Catálogo Omnilife</h1>
     <p>Entrega 6 días después de pagar</p>
   </header>
 
-  <!-- Catálogo de productos -->
-  <main class="catalog" id="catalog">
-    <div class="product" data-name="Producto 1" data-benefits="Beneficio 1, Beneficio 2, Beneficio 3">
-      <img src="producto1.jpg" alt="Producto 1">
-      <h2>Producto 1</h2>
+  <!-- Sección de Productos -->
+  <main class="catalog" id="productos">
+    <div class="controls">
+      <button id="sort-button">Ordenar Alfabéticamente</button>
     </div>
-    <!-- Repite esta estructura para más productos -->
+
+
+
+<div class="product" data-name="Omniplus Gummies" data-benefits="Apoya la salud inmunológica, Mejora la energía, Promueve la salud de la piel">
+    <img src="1.jpg" alt="Omniplus Gummies">
+    <h2>Omniplus Gummies</h2>
+  </div>
+  <div class="product" data-name="Mimis Gummies" data-benefits="Favorece la relajación, Mejora la calidad del sueño, Aumenta la concentración y energía durante el día">
+    <img src="https://alternativaparatusalud.com/cdn/shop/files/4095921_dbdca7e0-2d10-41f6-8b8c-6c6f8801ac56_530x@2x.png?v=1730135431" alt="Mimis Gummies">
+    <h2>Mimis Gummies</h2>
+  </div>
+  <div class="product" data-name="Vitamina D Gummies" data-benefits="Apoya el sistema inmunológico, Mejora la salud ósea, Ayuda en la función muscular">
+    <img src="https://alternativaparatusalud.com/cdn/shop/files/5695922_2b6c9bc0-1bf8-40da-9243-d081f64614de_530x@2x.png?v=1730140494" alt="Vitamina D Gummies">
+    <h2>Vitamina D Gummies</h2>
+</div>
+<div class="product" data-name="Omniplus" data-benefits="Fortalece el sistema inmunológico, Aumenta la energía y vitalidad, Mejora la salud ósea y muscular">
+    <img src="https://alternativaparatusalud.com/cdn/shop/files/2350330_129744d6-fdea-47bf-847b-b542b69b8f2b_1024x1024@2x.png?v=1730136484" alt="Omniplus">
+    <h2>Omniplus</h2>
+</div>
+<div class="product" data-name="Magnus" data-benefits="Fortalece el sistema inmunológico, Mejora la salud cardiovascular, Aumenta el rendimiento físico y mental">
+    <img src="https://alternativaparatusalud.com/cdn/shop/files/2023500_1aaa9f0b-31a4-4974-9ca1-91e3460fea94_1024x1024@2x.png?v=1730080477" alt="Magnus">
+    <h2>Magnus</h2>
+  </div>
+  <div class="product" data-name="IQU" data-benefits="Mejora la función cognitiva, Aumenta la energía celular, Refuerza el sistema inmune">
+    <img src="https://alternativaparatusalud.com/cdn/shop/files/3659152_7a456df6-b2f8-4f58-b21c-fae5915bac50_1024x1024@2x.png?v=1730142241" alt="IQU">
+    <h2>IQU</h2>
+</div>
+<div class="product" data-name="Power Maker" data-benefits="Aumenta la energía física y mental, Favorece el desarrollo muscular, Protege las células contra el estrés oxidativo">
+    <img src="https://alternativaparatusalud.com/cdn/shop/files/2603201_082c299d-5a49-4d48-bcfc-5ee27f4c3f0d_1024x1024@2x.png?v=1729986124" alt="Power Maker">
+    <h2>Power Maker</h2>
+</div>
+<div class="product" data-name="Fem" data-benefits="Apoya la salud hormonal, Contribuye al desarrollo saludable durante el embarazo, Mejora la salud ósea y muscular">
+    <img src="https://alternativaparatusalud.com/cdn/shop/files/1409621_b5623659-a22f-4d1c-9baf-4d649ffd70dd_1024x1024@2x.png?v=1730074736" alt="Fem Plus">
+    <h2>Fem</h2>
+  </div>
+  <div class="product" data-name="Cafezzino" data-benefits="Acelera el metabolismo, Ayuda en el manejo del peso, Apoya la salud digestiva">
+    <img src="https://alternativaparatusalud.com/cdn/shop/files/5105932_aa24940b-5d80-4908-ad6c-cd6eca8bbc59_1024x1024@2x.png?v=1729986871" alt="Cafezzino">
+    <h2>Cafezzino</h2>
+  </div>
+  <div class="product" data-name="TMGN Coffee" data-benefits="Ayuda en la pérdida de peso, Mejora el metabolismo, Promueve la salud muscular">
+    <img src="https://alternativaparatusalud.com/cdn/shop/files/2904727_3ca7f813-cf1e-49aa-8398-dbd09fa4abf7_1024x1024@2x.png?v=1729981354" alt="TMGN Coffee">
+    <h2>TMGN Coffee</h2>
+</div>
+<div class="product" data-name="Teatino" data-benefits="Ayuda a regular el metabolismo, Favorece la quema de grasas, Apoya en el control de peso">
+    <img src="https://alternativaparatusalud.com/cdn/shop/files/3505609_360x.png?v=1730132117" alt="Teatino">
+    <h2>Teatino</h2>
+  </div>
+  <div class="product" data-name="Fiber'n Plus" data-benefits="Mejora la digestión, Ayuda a regular el tránsito intestinal, Contribuye a la salud cardiovascular">
+    <img src="https://alternativaparatusalud.com/cdn/shop/files/1502208_c426bb13-7f2f-4e11-aade-31466b2696f4_1024x1024@2x.png?v=1730075794" alt="Fiber'n Plus">
+    <h2>Fiber'n Plus</h2>
+</div>
+<div class="product" data-name="Aloe Beta" data-benefits="Fortalece el sistema inmunológico, Mejora la digestión, Ayuda a mantener la piel saludable">
+    <img src="https://alternativaparatusalud.com/cdn/shop/files/4250204_16529ed3-3c09-4e5c-8e84-65ebe601e8dc_1024x1024@2x.png?v=1729974128" alt="Aloe Beta">
+    <h2>Aloe Beta</h2>
+  </div>
+  <div class="product" data-name="Omnilife Probiotic" data-benefits="Mejora la flora intestinal, Apoya el sistema inmune, Ayuda a la digestión">
+    <img src="https://alternativaparatusalud.com/cdn/shop/files/6724761_360x.png?v=1730138037" alt="Omnilife Probiotic">
+    <h2>Omnilife Probiotic</h2>
+  </div>
+  <div class="product" data-name="Starbien" data-benefits="Apoya la salud nerviosa, Promueve la vitalidad, Contribuye al bienestar digestivo">
+    <img src="https://alternativaparatusalud.com/cdn/shop/files/3000730_v1_9a5ab3b1-f17b-4b3f-b08a-4075ea8e2b4c_1024x1024@2x.png?v=1730077251" alt="Starbien">
+    <h2>Starbien</h2>
+  </div>
+  <div class="product" data-name="One C Mix" data-benefits="Fortalece el sistema inmunológico, Mejora la salud cardiovascular, Proporciona antioxidantes para la protección celular">
+    <img src="https://alternativaparatusalud.com/cdn/shop/files/6305929_ff420ca0-a786-4a3e-a49f-15c36f7efebc_1024x1024@2x.png?v=1730078249" alt="One C Mix">
+    <h2>One C Mix</h2>
+  </div>
+  
+  
+  
+
+
+
   </main>
+
+  <!-- Sección de Testimonios -->
+  <section id="testimonios" class="testimonios">
+    <h2>Testimonios</h2>
+    <p>"Desde que comencé a tomar One C Mix, he notado un cambio significativo en mi energía y salud general mi sistema inmunológico está más fuerte, y rara vez me siento agotado o enfermo además, siento que mi circulación ha mejorado y mi piel luce más saludable la combinación de antioxidantes me ha dado un impulso, y ahora me siento mucho más protegido frente a resfriados y estrés"</p> <p>— Carlos G</p>
+    <p>"Aloe Beta me ha ayudado enormemente a mejorar mi digestión. Tenía problemas de hinchazón y malestar estomacal, pero después de unos días de usar este producto, noté que mi digestión mejoró considerablemente también mi piel se ve mucho más hidratada, lo que me sorprendió , es un excelente producto para mejorar el bienestar general"</p>
+ <p>— Ana M</p>
+</section>
+
+  <!-- Sección Página (información general) -->
+  <section id="pagina" class="pagina">
+    <h2>Sobre Omnilife</h2>
+    <p>Omnilife es una empresa que ofrece productos de alta calidad para la salud y el bienestar</p>
+    <p>Con más de 30 años en el mercado, su compromiso es mejorar la vida de las personas a través de suplementos alimenticios, vitaminas y productos para el cuidado personals</p>
+  </section>
 
   <!-- Modal para mostrar los beneficios -->
   <div id="modal" class="modal">
@@ -43,9 +131,20 @@
     </div>
   </div>
 
-  <!-- Pie de página -->
-  <footer>
-    <p>&copy; 2024 Catálogo Omnilife - Todos los derechos reservados.</p>
+  <!-- Botón para cambiar el tema -->
+  <button id="theme-toggle" class="theme-toggle">🌙 Cambiar Tema</button>
+
+  <!-- Pie de página para promoción de servicios -->
+  <footer class="promo-footer">
+    <div class="footer-content">
+      <h2>¿Quieres una página web como esta?</h2>
+      <p>Desarrollamos sitios web únicos y personalizados para ti. Atrae más clientes con una página profesional y moderna.</p>
+      <button id="contact-whatsapp" class="whatsapp-button">Contáctame en WhatsApp</button>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2024 Catálogo OmniFit</p> <p>Todos los derechos reservados a OmniFit</p>
+    </div>
   </footer>
+
 </body>
 </html>
