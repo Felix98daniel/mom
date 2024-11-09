@@ -1,21 +1,30 @@
-/* styles.css */
+/* Estilos generales */
 * {
     box-sizing: border-box;
   }
   
   body {
     font-family: Arial, sans-serif;
-    background-color: #f9f9f9;
+    
+    background: linear-gradient(to bottom, #f6d7fc, #e7b6fd);
     color: #333;
     margin: 0;
     padding: 0;
+    transition: background-color 0.3s, color 0.3s;
+  }
+  
+  /* Modo oscuro */
+  body.dark-mode {
+    background-color: #33133a;
+    color: #f9f9f9;
   }
   
   /* Menú de navegación */
   .navbar {
+    border: none;
     display: flex;
     justify-content: center;
-    background-color: #ff69b4;
+    background: linear-gradient(to bottom, #e08cb6, #d1a0b8);
     padding: 10px 0;
   }
   
@@ -39,9 +48,10 @@
   
   /* Encabezado */
   .header {
+    border: none;
     text-align: center;
     padding: 20px;
-    background-color: #ff69b4;
+    background: linear-gradient(to bottom, #d1a0b8, #f6d7fc);
     color: white;
   }
   
@@ -55,13 +65,27 @@
     100% { transform: rotate(360deg); }
   }
   
-  /* Catálogo */
-  .catalog {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 20px;
+  /* Secciones */
+  .catalog, .testimonios, .pagina {
     padding: 20px;
+    text-align: center;
+  }
+  .pagina , .testimonios h2 {
+    color: #5d3569;
+  }
+  
+  .testimonios p {
+    font-style: italic;
+    color: #555;
+  }
+  
+  .catalog {
+    display: grid;
+  grid-template-columns: repeat(2, 1fr); /* Fuerza siempre 2 columnas en pantallas grandes */
+  gap: 20px; /* Espacio entre las columnas */
+  padding: 20px;
+  text-align: center;
+  justify-items: center;
   }
   
   .product {
@@ -73,10 +97,42 @@
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     transition: transform 0.3s;
     cursor: pointer;
+    width: 100%;
+  }
+  
+  body.dark-mode .product {
+    background-color: #444;
   }
   
   .product:hover {
     transform: scale(1.05);
+  }
+  
+  .product img {
+    width: 100%; /* Hacer que las imágenes se adapten al ancho del contenedor */
+    height: auto; /* Mantener la proporción de las imágenes */
+    border-radius: 8px;
+    object-fit: cover; /* Asegura que la imagen cubra el espacio disponible sin distorsionarse */
+  }
+  
+  /* Controles */
+  .controls {
+    text-align: center;
+    margin: 20px 0;
+  }
+  
+  .controls button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #ff69b4;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .controls button:hover {
+    background-color: #ff92d8;
   }
   
   /* Modal */
@@ -99,12 +155,10 @@
     border-radius: 8px;
     width: 300px;
     text-align: center;
-    animation: fadeIn 0.5s;
   }
   
-  @keyframes fadeIn {
-    from { opacity: 0; }
-    to { opacity: 1; }
+  body.dark-mode .modal-content {
+    background-color: #555;
   }
   
   .close-btn {
@@ -129,4 +183,72 @@
   .whatsapp-button:hover {
     background-color: #20b255;
   }
+  
+  /* Botón de cambio de tema */
+  .theme-toggle {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    padding: 10px 15px;
+    font-size: 16px;
+    background-color: #ff69b4;
+    color: white;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s, color 0.3s;
+    z-index: 1000;
+  }
+  
+  .theme-toggle:hover {
+    background-color: #ff92d8;
+  }
+  
+  /* Footer de promoción de servicios */
+  .promo-footer {
+    background-color: #e7b6fd;
+    color: rgb(0, 0, 0);
+    padding: 40px 20px;
+    text-align: center;
+    border-top: 1px solid #ff69b4;
+  }
+  
+  .promo-footer h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  .promo-footer p {
+    font-size: 16px;
+    margin-bottom: 20px;
+    color: #000000;
+  }
+  
+  .promo-footer .whatsapp-button {
+    background-color: #83b896;
+    color: rgb(0, 0, 0);
+    padding: 10px 20px;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .promo-footer .whatsapp-button:hover {
+    background-color: #20b255;
+  }
+  
+  /* Estilo para el mensaje de copyright */
+  .footer-bottom {
+    margin-top: 20px;
+    font-size: 14px;
+    color: #bbb;
+  }
+  /* Cambiar el color de los testimonios en el modo oscuro */
+body.dark-mode .testimonios p {
+    color: white;
+  }
+  
   
