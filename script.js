@@ -28,7 +28,7 @@ document.addEventListener("DOMContentLoaded", () => {
     // Enviar mensaje por WhatsApp
     whatsappBtn.addEventListener("click", () => {
       const productName = whatsappBtn.getAttribute("data-product");
-      const whatsappUrl = `https://wa.me/6242418016?text=Quiero%20información%20sobre%20el%20producto:%20${encodeURIComponent(productName)}`;
+      const whatsappUrl = `https://wa.me/6679670420?text=Quiero%20información%20sobre%20el%20producto:%20${encodeURIComponent(productName)}`;
       window.open(whatsappUrl, "_blank");
     });
   
