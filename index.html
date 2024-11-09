@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Catálogo Omnilife</title>
+  <link rel="stylesheet" href="styles.css">
+  <script defer src="script.js"></script>
+</head>
+<body>
+  <!-- Menú de navegación -->
+  <nav class="navbar">
+    <ul>
+      <li><a href="#home">Inicio</a></li>
+      <li><a href="#catalog">Catálogo</a></li>
+      <li><a href="#contact">Contacto</a></li>
+    </ul>
+  </nav>
+
+  <!-- Encabezado -->
+  <header class="header" id="home">
+    <img src="logo.png" alt="Logo Omnilife" class="logo">
+    <h1>Catálogo Omnilife</h1>
+    <p>Entrega 6 días después de pagar</p>
+  </header>
+
+  <!-- Catálogo de productos -->
+  <main class="catalog" id="catalog">
+    <div class="product" data-name="Producto 1" data-benefits="Beneficio 1, Beneficio 2, Beneficio 3">
+      <img src="producto1.jpg" alt="Producto 1">
+      <h2>Producto 1</h2>
+    </div>
+    <!-- Repite esta estructura para más productos -->
+  </main>
+
+  <!-- Modal para mostrar los beneficios -->
+  <div id="modal" class="modal">
+    <div class="modal-content">
+      <span class="close-btn">&times;</span>
+      <h2 id="modal-product-name">Nombre del Producto</h2>
+      <ul id="modal-benefits"></ul>
+      <button id="whatsapp-btn" class="whatsapp-button">Pedir por WhatsApp</button>
+    </div>
+  </div>
+
+  <!-- Pie de página -->
+  <footer>
+    <p>&copy; 2024 Catálogo Omnilife - Todos los derechos reservados.</p>
+  </footer>
+</body>
+</html>
